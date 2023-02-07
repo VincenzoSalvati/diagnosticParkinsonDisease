@@ -1,0 +1,53 @@
+#
+# Thesis: Analysis of distinctive traits in the Parkinsonian handwriting 2022/2023
+#
+# Supervisor:
+# Marcelli      Angelo      amarcelli@unisa.it
+#
+# Candidate:
+# Salvati       Vincenzo    v.salvati10@studenti.unisa.it      0622701550
+#
+# @file config.yml
+# PURPOSE OF THE FILE: Provides paths.
+#
+#
+
+# All tasks at once and single task once at a time
+
+features:
+  dataset:
+    all_features: './files/features/dataset/all_features/pahaw.csv'
+    selected_features: './files/features/dataset/selected_features/feature_selection_techniques'
+  dataset_tasks:
+    all_features: './files/features/dataset_tasks/all_features/pahaw_task_'
+    selected_features: './files/features/dataset_tasks/selected_features/feature_selection_techniques_task_'
+
+# Baseline Experiment
+
+baseline_default_hyperparameters:
+  all_features_hyperparameters: './files/baseline_experiment/hyperparameters_all_features/hyperparameters'
+  selected_features_hyperparameters: './files/baseline_experiment/hyperparameters_selected_features/hyperparameters'
+  performances: './files/baseline_experiment/performances/performances_baseline_default_hyperparameters'
+
+baseline_best_hyperparameters:
+  all_features_hyperparameters: './files/baseline_experiment_best_hyperparameters/hyperparameters_all_features/hyperparameters'
+  selected_features_hyperparameters: './files/baseline_experiment_best_hyperparameters/hyperparameters_selected_features/hyperparameters'
+  performances: './files/baseline_experiment_best_hyperparameters/performances/performances_baseline_best_hyperparameters'
+
+# Tasks Experiment
+
+tasks_default_hyperparameters:
+  all_features_hyperparameters: './files/tasks_experiment/hyperparameters_all_features/hyperparameters_task_'
+  selected_features_hyperparameters: './files/tasks_experiment/hyperparameters_selected_features/hyperparameters_task_'
+  performances: './files/tasks_experiment/performances/performance_default_hyperparameters_task_'
+
+tasks_best_hyperparameters:
+  all_features_hyperparameters: './files/tasks_experiment_best_hyperparameters/hyperparameters_all_features/hyperparameters_task_'
+  selected_features_hyperparameters: './files/tasks_experiment_best_hyperparameters/hyperparameters_selected_features/hyperparameters_task_'
+  performances: './files/tasks_experiment_best_hyperparameters/performances/performances_best_hyperparameters_best_task_'
+
+#Ensemble Learning Experiment
+
+ensemble_learning_default_hyperparameters: './files/tasks_final_ensemble_learning_experiment/performance_default_hyperparameters'
+
+ensemble_learning_best_hyperparameters: './files/tasks_final_ensemble_learning_experiment_best_hyperparameters/performances_best_hyperparameters'
